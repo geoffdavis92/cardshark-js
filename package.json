@@ -4,16 +4,22 @@
   "description": "",
   "main": "source/cardshark.js",
   "scripts": {
-  	"clean": "rm -r dist/;",
-  	"copy": "cp source/index.html dist/;",
-  	"build": "babel source/ -d dist/; npm run copy;",
-  	"serve": "cd dist/ && httpster -p 8080; cd -;",
+    "clean": "rm -r dist/;",
+    "copy": "cp source/index.html dist/;",
+    "build": "babel source/ -d dist/; npm run copy;",
+    "serve": "cd dist/ && httpster -p 8080; cd -;",
     "start": "babel -w source/ -d dist/;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "geoffdavis92@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.14.0"
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }
