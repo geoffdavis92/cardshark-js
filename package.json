@@ -21,5 +21,8 @@
     "presets": [
       "es2015"
     ]
+  },
+  "dependencies": {
+    "ajax.js": "0.0.8"
   }
 }
